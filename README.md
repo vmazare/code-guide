@@ -3,5 +3,5 @@ by @vmazare
 
 The original repository: https://github.com/mdo/code-guide
 
-# Contribuitions
+# Contributions
 Any contribution is very welcome.
