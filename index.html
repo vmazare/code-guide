@@ -47,7 +47,7 @@ layout: default
 <div class="section" id="golden-rule">
   <div class="col">
     <h2>Regula de aur</h2>
-    <p>Enforce these, or your own, agreed upon guidelines at all times. Small or large, call out what's incorrect. For additions or contributions to this Code Guide, please <a href="https://github.com/mdo/code-guide/issues/new">open an issue on GitHub</a>.</p>
+    <p>Întotdeauna conduceți-vă după reguli, aceasta sau altele adoptate de voi. Nu admiteți incorectitudine. Pentru adițiuni sau constribuții la acest ghid, vă rog să creați o <a href="https://github.com/mdo/code-guide/issues/new">înregistrați pe GitHub</a>.</p>
   </div>
   <div class="col">
     <blockquote>
@@ -69,8 +69,8 @@ layout: default
       <li>Folosiți tab-uri ușoare cu două spații, aceasta e unica siguranță că codul se va afișa la fel în orice mediu.</li>
       <li>Elementele imbricate trebuie să fie dantelate o singură dată (două spații).</li>
       <li>Folosiți mereu ghilimele duble pentru atribute și nicidecum singulare.</li>
-      <li>Don't include a trailing slash in self-closing elements—the <a href="http://dev.w3.org/html5/spec-author-view/syntax.html#syntax-start-tag">HTML5 spec</a> says they're optional.</li>
-      <li>Don’t omit optional closing tags (e.g. <code>&lt;/li&gt;</code> or <code>&lt;/body&gt;</code>).</li>
+      <li>Nu includeți o bară suplimentară în elementele care se autoînchid — <a href="http://dev.w3.org/html5/spec-author-view/syntax.html#syntax-start-tag">HTML5 specifică</a> că ele sunt opționale.</li>
+      <li>Nu omiteți tagurile închise opțional (ex. <code>&lt;/li&gt;</code> or <code>&lt;/body&gt;</code>).</li>
     </ul>
   </div>
   <div class="col">
@@ -81,7 +81,7 @@ layout: default
 <div class="section" id="html-doctype">
   <div class="col">
     <h3>HTML5 doctype</h3>
-    <p>Enforce standards mode and more consistent rendering in every browser possible with this simple doctype at the beginning of every HTML page.</p>
+    <p>Insistați la respectarea standardelor și la afișarea cît mai consistentă în oricare browser cu ajutorul acestui simplu doctype la fiecare început de pagină HTML.</p>
   </div>
   <div class="col">
     {% highlight html %}{% include html/doctype.html %}{% endhighlight %}
@@ -90,13 +90,13 @@ layout: default
 
 <div class="section" id="html-lang">
   <div class="col">
-    <h3>Language attribute</h3>
-    <p>From the HTML5 spec:</p>
+    <h3>Atributul language</h3>
+    <p>Din specificațiile HTML5:</p>
     <blockquote>
-      <p>Authors are encouraged to specify a lang attribute on the root html element, giving the document's language. This aids speech synthesis tools to determine what pronunciations to use, translation tools to determine what rules to use, and so forth.</p>
+      <p>Autorii sunt încurajați să specifice un atribut lang în fiecare element-rădăcină, care indică limba documentului. Acesta ajută instrumentelor de sinteză a vorbirii și celor de traducere ce pronunțare și instrumente să folosească.</p>
     </blockquote>
-    <p>Read more about the <code>lang</code> attribute <a href="http://www.w3.org/html/wg/drafts/html/master/semantics.html#the-html-element">in the spec</a>.</p>
-    <p>Head to Sitepoint for a <a href="http://reference.sitepoint.com/html/lang-codes">list of language codes</a>.</p>
+    <p>Citiți mai mult despre atributul <code>lang</code>  <a href="http://www.w3.org/html/wg/drafts/html/master/semantics.html#the-html-element">in the spec</a>.</p>
+    <p>Găsiți pe Sitepoint <a href="http://reference.sitepoint.com/html/lang-codes">o listă a codurilor limbilor</a>.</p>
   </div>
   <div class="col">
     {% highlight html %}{% include html/lang.html %}{% endhighlight %}
@@ -105,7 +105,7 @@ layout: default
 
 <div class="section" id="html-ie-compatibility-mode">
   <div class="col">
-    <h3>IE compatibility mode</h3>
+    <h3>Modul de compatibilitate cu IE.</h3>
     <p>Internet Explorer supports the use of a document compatibility <code>&lt;meta&gt;</code> tag to specify what version of IE the page should be rendered as. Unless circumstances require otherwise, it's most useful to instruct IE to use the latest supported mode with <strong>edge mode</strong>.</p>
     <p>For more information, <a href="http://stackoverflow.com/questions/6771258/whats-the-difference-if-meta-http-equiv-x-ua-compatible-content-ie-edge-e">read this awesome Stack Overflow article</a>.</p>
   </div>
