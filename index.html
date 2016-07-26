@@ -106,8 +106,8 @@ layout: default
 <div class="section" id="html-ie-compatibility-mode">
   <div class="col">
     <h3>Modul de compatibilitate cu IE.</h3>
-    <p>Internet Explorer supports the use of a document compatibility <code>&lt;meta&gt;</code> tag to specify what version of IE the page should be rendered as. Unless circumstances require otherwise, it's most useful to instruct IE to use the latest supported mode with <strong>edge mode</strong>.</p>
-    <p>For more information, <a href="http://stackoverflow.com/questions/6771258/whats-the-difference-if-meta-http-equiv-x-ua-compatible-content-ie-edge-e">read this awesome Stack Overflow article</a>.</p>
+    <p>Internet Explorer suportă folosirea unui tag <code>&lt;meta&gt;</code> de compatibilitate a documentului pentru a specifica sub ce versiune de IE trebuie să fie afișată pagina. Dacă nu există alte circumstanțe, este cel mai util de a instructa IE să funcționeze cu <strong>edge mode</strong>.</p>
+    <p>Pentru mai multă informație, <a href="http://stackoverflow.com/questions/6771258/whats-the-difference-if-meta-http-equiv-x-ua-compatible-content-ie-edge-e">vedeți acest articol minunat de pe Stack Overflow.</a>.</p>
   </div>
   <div class="col">
     {% highlight html %}{% include html/ie-compatibility-mode.html %}{% endhighlight %}
@@ -116,8 +116,8 @@ layout: default
 
 <div class="section" id="html-encoding">
   <div class="col">
-    <h3>Character encoding</h3>
-    <p>Quickly and easily ensure proper rendering of your content by declaring an explicit character encoding. When doing so, you may avoid using character entities in your HTML, provided their encoding matches that of the document (generally UTF-8).</p>
+    <h3>Codificarea caracterelor</h3>
+    <p>Puteți asigura ușor și rapid afișarea corectă a conținutului vostru prin declararea unei codificări de caractere implicite. Dacă faceți astfel, ați putea evita folosirea entităților de caracter în codul vostru HTML, suplinind analogurile lor din codificarea documentului (deobicei UTF-8).</p>
   </div>
   <div class="col">
     {% highlight html %}{% include html/encoding.html %}{% endhighlight %}
@@ -126,13 +126,13 @@ layout: default
 
 <div class="section" id="html-style-script">
   <div class="col">
-    <h3>CSS and JavaScript includes</h3>
-    <p>Per HTML5 spec, typically there is no need to specify a <code>type</code> when including CSS and JavaScript files as <code>text/css</code> and <code>text/javascript</code> are their respective defaults.</p>
-    <h4>HTML5 spec links</h4>
+    <h3>Includerea CSS și JavaScript</h3>
+    <p>Conform specificațiilor HTML5, deobicei nu este nevoie să specificați un atribut <code>type</code> la includerea fișierelor CSS și JavaScript deoarece valorile <code>text/css</code> și respectiv <code>text/javascript</code> sunt utilizate implicit.</p>
+    <h4>Adrese spre specificațiile HTML5</h4>
     <ul>
-      <li><a href="http://www.w3.org/TR/2011/WD-html5-20110525/semantics.html#the-link-element">Using link</a></li>
-      <li><a href="http://www.w3.org/TR/2011/WD-html5-20110525/semantics.html#the-style-element">Using style</a></li>
-      <li><a href="http://www.w3.org/TR/2011/WD-html5-20110525/scripting-1.html#the-script-element">Using script</a></li>
+      <li><a href="http://www.w3.org/TR/2011/WD-html5-20110525/semantics.html#the-link-element">Folosirea link</a></li>
+      <li><a href="http://www.w3.org/TR/2011/WD-html5-20110525/semantics.html#the-style-element">Folosirea style</a></li>
+      <li><a href="http://www.w3.org/TR/2011/WD-html5-20110525/scripting-1.html#the-script-element">Folosirea script</a></li>
     </ul>
   </div>
   <div class="col">
@@ -142,15 +142,15 @@ layout: default
 
 <div class="section" id="html-practicality">
   <div class="col">
-    <h3>Practicality over purity</h3>
-    <p>Strive to maintain HTML standards and semantics, but not at the expense of practicality. Use the least amount of markup with the fewest intricacies whenever possible.</p>
+    <h3>Optați pentru practicalitate în loc de puritate</h3>
+    <p>Tindeți spre menținerea standardelor și semanticii HTML, dar nu cu prețul practicalității. Folosiți cît mai puțin cod posibil cu încă mai puține labirinturi, dacă e posibil.</p>
   </div>
 </div>
 
 <div class="section" id="html-attribute-order">
   <div class="col">
-    <h3>Attribute order</h3>
-    <p>HTML attributes should come in this particular order for easier reading of code.</p>
+    <h3>Ordinea atributelor</h3>
+    <p>Atributele HTML trebuie să apară anume în această ordine, pentru o citire mai ușoară a codului.</p>
     <ul>
       <li><code>class</code></li>
       <li><code>id</code>, <code>name</code></li>
@@ -159,7 +159,7 @@ layout: default
       <li><code>title</code>, <code>alt</code></li>
       <li><code>role</code>, <code>aria-*</code></li>
     </ul>
-    <p>Classes make for great reusable components, so they come first. Ids are more specific and should be used sparingly (e.g., for in-page bookmarks), so they come second.</p>
+    <p>Clasele asigură reutilizarea componentelor, deci ele trebuie să apară primele. Id-urile sunt mai specifice și deobicei folosite mai rar (ex. pentru marcarea elementelor-cheie ale paginii), deci ele vin în rîndul doi.</p>
   </div>
   <div class="col">
     {% highlight html %}{% include html/attribute-order.html %}{% endhighlight %}
@@ -168,9 +168,9 @@ layout: default
 
 <div class="section" id="html-boolean-attributes">
   <div class="col">
-    <h3>Boolean attributes</h3>
-    <p>A boolean attribute is one that needs no declared value. XHTML required you to declare a value, but HTML5 has no such requirement.</p>
-    <p>For further reading, consult the <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/common-microsyntaxes.html#boolean-attributes">WhatWG section on boolean attributes</a>:</p>
+    <h3>Atributele logice</h3>
+    <p>Un atribut logic este cel care nu are nevoie de declararea valorii. XHTML are o asemenea cerință, dar HTML5 nu.</p>
+    <p>Pentru mai multă informație, consultați <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/common-microsyntaxes.html#boolean-attributes">secțiunea WhatWG la atributele logice</a>:</p>
     <blockquote>
       <p>The presence of a boolean attribute on an element represents the true value, and the absence of the attribute represents the false value.</p>
     </blockquote>
