@@ -172,13 +172,13 @@ layout: default
     <p>Un atribut logic este cel care nu are nevoie de declararea valorii. XHTML are o asemenea cerință, dar HTML5 nu.</p>
     <p>Pentru mai multă informație, consultați <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/common-microsyntaxes.html#boolean-attributes">secțiunea WhatWG la atributele logice</a>:</p>
     <blockquote>
-      <p>The presence of a boolean attribute on an element represents the true value, and the absence of the attribute represents the false value.</p>
+      <p>Prezența unui atribut logic în cadrul unui element reprezintă valoarea adevărată, iar absența lui înseamnă valoarea falsă.</p>
     </blockquote>
-    <p>If you <em>must</em> include the attribute's value, and <strong>you don't need to</strong>, follow this WhatWG guideline:</p>
+    <p>Dacă <em>trebuie</em> să includeți valoarea lui, dar <strong>nu aveți nevoie</strong>, urmați acest ghid WhatWG:</p>
     <blockquote>
-      <p>If the attribute is present, its value must either be the empty string or [...] the attribute's canonical name, with no leading or trailing whitespace.</p>
+      <p>Dacă atributul este prezent, valoarea sa trebuie să fie ori un șir de caractere gol ori [...] numele atributului, fără spațiu înainte sau după el.</p>
     </blockquote>
-    <p><strong>In short, don't add a value.</strong></p>
+    <p><strong>Pe scurt, nu specificați valoarea.</strong></p>
   </div>
   <div class="col">
     {% highlight html %}{% include html/boolean-attributes.html %}{% endhighlight %}
