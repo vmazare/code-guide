@@ -187,8 +187,8 @@ layout: default
 
 <div class="section" id="html-reducing-markup">
   <div class="col">
-    <h3>Reducing markup</h3>
-    <p>Whenever possible, avoid superfluous parent elements when writing HTML. Many times this requires iteration and refactoring, but produces less HTML. Take the following example:</p>
+    <h3>Reducerea codului HTML</h3>
+    <p>Dacă e posibil, evitați folosirea inutilă a elementelor-părinte HTML. Deseori asta necesită transformări, dar produce mai puțin cod HTML. Vedeți următorul exemplu:</p>
   </div>
   <div class="col">
     {% highlight html %}{% include html/reducing-markup.html %}{% endhighlight %}
@@ -197,8 +197,8 @@ layout: default
 
 <div class="section" id="html-javascript">
   <div class="col">
-    <h3>JavaScript generated markup</h3>
-    <p>Writing markup in a JavaScript file makes the content harder to find, harder to edit, and less performant. Avoid it whenever possible.</p>
+    <h3>Markup generat de JavaScript</h3>
+    <p>Scrierea markup-ului într-un fișier JavaScript face conținutul mai greu de găsit, de editat, și mai puțin performant. Evitați asta oricînd posibil.</p>
   </div>
 </div>
 
@@ -210,15 +210,15 @@ layout: default
 
 <div class="section" id="css-syntax">
   <div class="col">
-    <h3>Syntax</h3>
+    <h3>Sintaxa</h3>
     <ul>
-      <li>Use soft tabs with two spaces—they're the only way to guarantee code renders the same in any environment.</li>
-      <li>When grouping selectors, keep individual selectors to a single line.</li>
-      <li>Include one space before the opening brace of declaration blocks for legibility.</li>
-      <li>Place closing braces of declaration blocks on a new line.</li>
-      <li>Include one space after <code>:</code> for each declaration.</li>
-      <li>Each declaration should appear on its own line for more accurate error reporting.</li>
-      <li>End all declarations with a semi-colon. The last declaration's is optional, but your code is more error prone without it.</li>
+      <li>Folosiți tab-uri ușoare din 2 spații — asta este unica cale de a garanta că codul se va afișa bine în orice mediu.</li>
+      <li>La gruparea selectorilor, păstrați doar un singur selector per linie.</li>
+      <li>Includeți un spațiu înainte de deschiderea acoladei de declarare a blocului pentru legibilitate.</li>
+      <li>Amplasați acolada de închidere a blocului într-o linie nouă.</li>
+      <li>Includeți un spațiu după <code>:</code> pentru fiecare declarare.</li>
+      <li>Fiecare declarație trebuie să apară în propria sa linie pentru o developare mai bună a erorilor.</li>
+      <li>Încheiați toate declarațiile cu simbolul punt și virgulă. Este opțional pentru ultima declarație, dar codul va fi mai expus la erori fără asta.</li>
       <li>Comma-separated property values should include a space after each comma (e.g., <code>box-shadow</code>).</li>
       <li>Don't include spaces after commas <em>within</em> <code>rgb()</code>, <code>rgba()</code>, <code>hsl()</code>, <code>hsla()</code>, or <code>rect()</code> values. This helps differentiate multiple color values (comma, no space) from multiple property values (comma with space).</li>
       <li>Don't prefix property values or color parameters with a leading zero (e.g., <code>.5</code> instead of <code>0.5</code> and <code>-.5px</code> instead of <code>-0.5px</code>).</li>
