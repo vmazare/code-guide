@@ -47,7 +47,7 @@ layout: default
 <div class="section" id="golden-rule">
   <div class="col">
     <h2>Regula de aur</h2>
-    <p>Întotdeauna conduceți-vă după reguli, aceasta sau altele adoptate de voi. Nu admiteți incorectitudine. Pentru adițiuni sau constribuții la acest ghid, vă rog să creați o <a href="https://github.com/mdo/code-guide/issues/new">înregistrați pe GitHub</a>.</p>
+    <p>Întotdeauna conduceți-vă după reguli, aceasta sau altele adoptate de voi. Nu admiteți incorectitudine. Adițiunile sau constribuțiile la acest ghid pot fi <a href="https://github.com/mdo/code-guide/issues/new">înregistrate pe GitHub</a>.</p>
   </div>
   <div class="col">
     <blockquote>
@@ -69,8 +69,8 @@ layout: default
       <li>Folosiți tab-uri ușoare cu două spații, aceasta e unica siguranță că codul se va afișa la fel în orice mediu.</li>
       <li>Elementele imbricate trebuie să fie dantelate o singură dată (două spații).</li>
       <li>Folosiți mereu ghilimele duble pentru atribute și nicidecum singulare.</li>
-      <li>Nu includeți o bară suplimentară în elementele care se autoînchid — <a href="http://dev.w3.org/html5/spec-author-view/syntax.html#syntax-start-tag">HTML5 specifică</a> că ele sunt opționale.</li>
-      <li>Nu omiteți tagurile închise opțional (ex. <code>&lt;/li&gt;</code> or <code>&lt;/body&gt;</code>).</li>
+      <li>Nu includeți o bară suplimentară în elementele care se auto închid — <a href="http://dev.w3.org/html5/spec-author-view/syntax.html#syntax-start-tag">HTML5 specifică</a> că ele sunt opționale.</li>
+      <li>Nu omiteți tag-urile închise opțional (ex. <code>&lt;/li&gt;</code> or <code>&lt;/body&gt;</code>).</li>
     </ul>
   </div>
   <div class="col">
@@ -93,7 +93,7 @@ layout: default
     <h3>Atributul language</h3>
     <p>Din specificațiile HTML5:</p>
     <blockquote>
-      <p>Autorii sunt încurajați să specifice un atribut lang în fiecare element-rădăcină, care indică limba documentului. Acesta ajută instrumentelor de sinteză a vorbirii și celor de traducere ce pronunțare și instrumente să folosească.</p>
+      <p>Autorii sunt încurajați să specifice un atribut lang în fiecare element-rădăcină, care indică limba documentului. Acesta contribuie ca instrumentele de sinteză a limbii și traducerii să lucreze mai eficient.</p>
     </blockquote>
     <p>Citiți mai mult despre atributul <code>lang</code>  <a href="http://www.w3.org/html/wg/drafts/html/master/semantics.html#the-html-element">in the spec</a>.</p>
     <p>Găsiți pe Sitepoint <a href="http://reference.sitepoint.com/html/lang-codes">o listă a codurilor limbilor</a>.</p>
@@ -106,8 +106,8 @@ layout: default
 <div class="section" id="html-ie-compatibility-mode">
   <div class="col">
     <h3>Modul de compatibilitate cu IE.</h3>
-    <p>Internet Explorer suportă folosirea unui tag <code>&lt;meta&gt;</code> de compatibilitate a documentului pentru a specifica sub ce versiune de IE trebuie să fie afișată pagina. Dacă nu există alte circumstanțe, este cel mai util de a instructa IE să funcționeze cu <strong>edge mode</strong>.</p>
-    <p>Pentru mai multă informație, <a href="http://stackoverflow.com/questions/6771258/whats-the-difference-if-meta-http-equiv-x-ua-compatible-content-ie-edge-e">vedeți acest articol minunat de pe Stack Overflow.</a>.</p>
+    <p>Internet Explorer suportă folosirea unui tag <code>&lt;meta&gt;</code> de compatibilitate a documentului pentru a specifica sub ce versiune de IE trebuie să fie afișată pagina. Dacă nu există alte circumstanțe, este cel mai bine de a seta IE să funcționeze cu <strong>edge mode</strong>.</p>
+    <p>Pentru mai multă informație, <a href="http://stackoverflow.com/questions/6771258/whats-the-difference-if-meta-http-equiv-x-ua-compatible-content-ie-edge-e">vedeți acest articol de pe StackOverflow.</a>.</p>
   </div>
   <div class="col">
     {% highlight html %}{% include html/ie-compatibility-mode.html %}{% endhighlight %}
@@ -117,7 +117,7 @@ layout: default
 <div class="section" id="html-encoding">
   <div class="col">
     <h3>Codificarea caracterelor</h3>
-    <p>Puteți asigura ușor și rapid afișarea corectă a conținutului vostru prin declararea unei codificări de caractere implicite. Dacă faceți astfel, ați putea evita folosirea entităților de caracter în codul vostru HTML, suplinind analogurile lor din codificarea documentului (deobicei UTF-8).</p>
+    <p>Într-un mod ușor și rapid puteți asigura afișarea corectă a conținutului prin declararea unei codificări de caractere implicite. Dacă faceți astfel, ați putea evita folosirea entităților de caracter în codul vostru HTML, suplinind analogurile lor din codificarea documentului (deobicei UTF-8).</p>
   </div>
   <div class="col">
     {% highlight html %}{% include html/encoding.html %}{% endhighlight %}
@@ -143,7 +143,7 @@ layout: default
 <div class="section" id="html-practicality">
   <div class="col">
     <h3>Optați pentru practicalitate în loc de puritate</h3>
-    <p>Tindeți spre menținerea standardelor și semanticii HTML, dar nu cu prețul practicalității. Folosiți cît mai puțin cod posibil cu încă mai puține labirinturi, dacă e posibil.</p>
+    <p>Tindeți spre menținerea standardelor și semanticii HTML, dar nu cu prețul practicalității. Folosiți cît mai puțin cod posibil cu încă mai puține labirinturi.</p>
   </div>
 </div>
 
@@ -159,7 +159,7 @@ layout: default
       <li><code>title</code>, <code>alt</code></li>
       <li><code>role</code>, <code>aria-*</code></li>
     </ul>
-    <p>Clasele asigură reutilizarea componentelor, deci ele trebuie să apară primele. Id-urile sunt mai specifice și deobicei folosite mai rar (ex. pentru marcarea elementelor-cheie ale paginii), deci ele vin în rîndul doi.</p>
+    <p>Clasele asigură reutilizarea componentelor, deci ele trebuie să apară primele. ID-urile sunt mai specifice și deobicei folosite mai rar (ex. pentru marcarea elementelor-cheie ale paginii), deci ele vin în rîndul doi.</p>
   </div>
   <div class="col">
     {% highlight html %}{% include html/attribute-order.html %}{% endhighlight %}
@@ -172,7 +172,7 @@ layout: default
     <p>Un atribut logic este cel care nu are nevoie de declararea valorii. XHTML are o asemenea cerință, dar HTML5 nu.</p>
     <p>Pentru mai multă informație, consultați <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/common-microsyntaxes.html#boolean-attributes">secțiunea WhatWG la atributele logice</a>:</p>
     <blockquote>
-      <p>Prezența unui atribut logic în cadrul unui element reprezintă valoarea adevărată, iar absența lui înseamnă valoarea falsă.</p>
+      <p>Prezența unui atribut logic în cadrul unui element înseamnă valoarea lui adevărată, iar absența lui - falsă.</p>
     </blockquote>
     <p>Dacă <em>trebuie</em> să includeți valoarea lui, dar <strong>nu aveți nevoie</strong>, urmați acest ghid WhatWG:</p>
     <blockquote>
@@ -188,7 +188,7 @@ layout: default
 <div class="section" id="html-reducing-markup">
   <div class="col">
     <h3>Reducerea codului HTML</h3>
-    <p>Dacă e posibil, evitați folosirea inutilă a elementelor-părinte HTML. Deseori asta necesită transformări, dar produce mai puțin cod HTML. Vedeți următorul exemplu:</p>
+    <p>Dacă e posibil, evitați folosirea inutilă a elementelor-părinte HTML. Deseori asta necesită transformări, dar produc mai puțin cod HTML. Vedeți următorul exemplu:</p>
   </div>
   <div class="col">
     {% highlight html %}{% include html/reducing-markup.html %}{% endhighlight %}
@@ -197,8 +197,8 @@ layout: default
 
 <div class="section" id="html-javascript">
   <div class="col">
-    <h3>Markup generat de JavaScript</h3>
-    <p>Scrierea markup-ului într-un fișier JavaScript face conținutul mai greu de găsit, de editat, și mai puțin performant. Evitați asta oricînd posibil.</p>
+    <h3>Markup-ul generat de JavaScript</h3>
+    <p>Scrierea markup-ului într-un fișier JavaScript face conținutul mai greu de găsit, de editat, și mai puțin performant. Evitați-o oricînd posibil.</p>
   </div>
 </div>
 
@@ -212,22 +212,22 @@ layout: default
   <div class="col">
     <h3>Sintaxa</h3>
     <ul>
-      <li>Folosiți tab-uri ușoare din 2 spații — asta este unica cale de a garanta că codul se va afișa bine în orice mediu.</li>
+      <li>Folosiți tab-uri ușoare din 2 spații — asta este una din garanțiile că codul se va afișa bine în orice mediu.</li>
       <li>La gruparea selectorilor, păstrați doar un singur selector per linie.</li>
       <li>Includeți un spațiu înainte de deschiderea acoladei de declarare a blocului pentru legibilitate.</li>
       <li>Amplasați acolada de închidere a blocului într-o linie nouă.</li>
       <li>Includeți un spațiu după <code>:</code> pentru fiecare declarare.</li>
       <li>Fiecare declarație trebuie să apară în propria sa linie pentru o developare mai bună a erorilor.</li>
-      <li>Încheiați toate declarațiile cu simbolul punt și virgulă. Este opțional pentru ultima declarație, dar codul va fi mai expus la erori fără asta.</li>
-      <li>Comma-separated property values should include a space after each comma (e.g., <code>box-shadow</code>).</li>
-      <li>Don't include spaces after commas <em>within</em> <code>rgb()</code>, <code>rgba()</code>, <code>hsl()</code>, <code>hsla()</code>, or <code>rect()</code> values. This helps differentiate multiple color values (comma, no space) from multiple property values (comma with space).</li>
-      <li>Don't prefix property values or color parameters with a leading zero (e.g., <code>.5</code> instead of <code>0.5</code> and <code>-.5px</code> instead of <code>-0.5px</code>).</li>
-      <li>Lowercase all hex values, e.g., <code>#fff</code>. Lowercase letters are much easier to discern when scanning a document as they tend to have more unique shapes.</li>
-      <li>Use shorthand hex values where available, e.g., <code>#fff</code> instead of <code>#ffffff</code>.</li>
-      <li>Quote attribute values in selectors, e.g., <code>input[type="text"]</code>. <a href="http://mathiasbynens.be/notes/unquoted-attribute-values#css">They’re only optional in some cases</a>, and it’s a good practice for consistency.</li>
-      <li>Avoid specifying units for zero values, e.g., <code>margin: 0;</code> instead of <code>margin: 0px;</code>.</li>
+      <li>Încheiați toate declarațiile cu simbolul punct și virgulă. Este opțional pentru ultima declarație, dar codul va fi mai expus la erori fără acesta.</li>
+      <li>Valorile proprietăților care sunt separate prin virgulă trebuie să includă un spațiu după fiecare din ele (De ex. <code>box-shadow</code>).</li>
+      <li>Nu includeți spații după virgule <em>în cadrul</em> valorilor <code>rgb()</code>, <code>rgba()</code>, <code>hsl()</code>, <code>hsla()</code>, sau <code>rect()</code>. Asta ajută la diferențierea culorilor cu mai multe valori (virgulă, fără spațiu) de valorile proprietăților cu multe valori (virgulă cu soațiu).</li>
+      <li>Nu prefixați valorile proprietăților sau parametrii de culori cu un zerou (De ex. <code>.5</code> în loc de <code>0.5</code> și <code>-.5px</code> în loc de <code>-0.5px</code>).</li>
+      <li>Folosiți litere mici pentru valorile hexadecimale, de ex. <code>#fff</code>. Literele mici sunt mai lizibile la mărirea documenteului din cauza că ele tin să aibă forme mai unice.</li>
+      <li>Folosiți versiunile scurte ale valorilor hexadecimale, de ex. <code>#fff</code> în loc de <code>#ffffff</code>.</li>
+      <li>Delimitați prin ghilimele valoarile atributelor în selectori, de ex. <code>input[type="text"]</code>. <a href="http://mathiasbynens.be/notes/unquoted-attribute-values#css">Ele sunt opționale în unele cazuri</a>, și sunt o bună practică pentru consistență.</li>
+      <li>Evitați specificarea unităților pentru valorile nule, de ex. <code>margin: 0;</code> în loc de <code>margin: 0px;</code>.</li>
     </ul>
-    <p>Questions on the terms used here? See the <a href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets#Syntax">syntax section of the Cascading Style Sheets article</a> on Wikipedia.</p>
+    <p>Mai multe detalii despre termenii utilizați în această secțiune <a href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets#Syntax">vedeți în acest articol</a> de pe Wikipedia.</p>
   </div>
   <div class="col">
     {% highlight css %}{% include css/syntax.css %}{% endhighlight %}
@@ -236,17 +236,17 @@ layout: default
 
 <div class="section" id="css-declaration-order">
   <div class="col">
-    <h3>Declaration order</h3>
-    <p>Related property declarations should be grouped together following the order:</p>
+    <h3>Ordinea declarării</h3>
+    <p>Declarațiile proprietăților comune trebuiesc grupate împreună conform ordinii:</p>
     <ol>
-      <li>Positioning</li>
-      <li>Box model</li>
-      <li>Typographic</li>
-      <li>Visual</li>
+      <li>Poziționare</li>
+      <li>Modelul de apariție</li>
+      <li>Tipografic</li>
+      <li>Vizual</li>
     </ol>
-    <p>Positioning comes first because it can remove an element from the normal flow of the document and override box model related styles. The box model comes next as it dictates a component's dimensions and placement.</p>
-    <p>Everything else takes place <em>inside</em> the component or without impacting the previous two sections, and thus they come last.</p>
-    <p>For a complete list of properties and their order, please see <a href="http://twitter.github.com/recess">Recess</a>.</p>
+    <p>Poziționarea vine prima pentru că poate elimina elementul din fluxul normal al documentului și suprascrie stilurile aferente acesteia. Modelul de apariție este pe a doua poziție deoarece dicteaza dimensiunile și amplasarea elementului.</p>
+    <p>Restul are loc <em>în interiorul</em> componentului fără a afecta elementele din secțiunea precedentă, deci ele ocupă ultimele poțiții.</p>
+    <p>Pentru o listă completă a proprietăților și ordinii lor, vedeți acest <a href="http://twitter.github.com/recess">Recess</a>.</p>
   </div>
   <div class="col">
     {% highlight css %}{% include css/declaration-order.css %}{% endhighlight %}
@@ -255,14 +255,14 @@ layout: default
 
 <div class="section" id="css-import">
   <div class="col">
-    <h3>Don't use <code>@import</code></h3>
-    <p>Compared to <code>&lt;link&gt;</code>s, <code>@import</code> is slower, adds extra page requests, and can cause other unforeseen problems. Avoid them and instead opt for an alternate approach:</p>
+    <h3>Nu folosiți <code>@import</code></h3>
+    <p>În comparație cu <code>&lt;link&gt;</code>, <code>@import</code> este mai lent, adaugă mai multe cereri de pagină, sau cauzează mai multe probleme neașteptate. Optați pentru o alternativă:</p>
     <ul>
-      <li>Use multiple <code>&lt;link&gt;</code> elements</li>
-      <li>Compile your CSS with a preprocessor like Sass or Less into a single file</li>
-      <li>Concatenate your CSS files with features provided in Rails, Jekyll, and other environments</li>
+      <li>Folosiți elemente <code>&lt;link&gt;</code> multiple</li>
+      <li>Compilați codul CSS cu un pre-procesor ca Sass sau Less într-un singur fișier</li>
+      <li>Concatenați fișierele CSS cu instrumentele oferite de Rails, Jekyll, și altele</li>
     </ul>
-    <p>For more information, <a href="http://www.stevesouders.com/blog/2009/04/09/dont-use-import/">read this article by Steve Souders</a>.</p>
+    <p>Pentru mai multă informație, <a href="http://www.stevesouders.com/blog/2009/04/09/dont-use-import/">citiți acest articol de Steve Souders</a>.</p>
   </div>
   <div class="col">
     {% highlight html %}{% include css/import.html %}{% endhighlight %}
@@ -271,8 +271,8 @@ layout: default
 
 <div class="section" id="css-media-queries">
   <div class="col">
-    <h3>Media query placement</h3>
-    <p>Place media queries as close to their relevant rule sets whenever possible. Don't bundle them all in a separate stylesheet or at the end of the document. Doing so only makes it easier for folks to miss them in the future. Here's a typical setup.</p>
+    <h3>Amplasarea pentru media query</h3>
+     <p>Amplasați media queries cît mai aproape de seturile lor de reguli relevante cînd este posibil. Nu le grupați într-un alt fișier sau la sfîrșitul documentului. Asta le va face mai puțin observabile de către alte persoane. Acesta este un început tipic.</p>
   </div>
   <div class="col">
     {% highlight css %}{% include css/media-queries.css %}{% endhighlight %}
@@ -281,9 +281,9 @@ layout: default
 
 <div class="section" id="css-prefixed-properties">
   <div class="col">
-    <h3>Prefixed properties</h3>
-    <p>When using vendor prefixed properties, indent each property such that the declaration's value lines up vertically for easy multi-line editing.</p>
-    <p>In Textmate, use <strong>Text &rarr; Edit Each Line in Selection</strong> (&#8963;&#8984;A). In Sublime Text 2, use <strong>Selection &rarr; Add Previous Line</strong> (&#8963;&#8679;&uarr;) and <strong>Selection &rarr;  Add Next Line</strong> (&#8963;&#8679;&darr;).</p>
+    <h3>Proprietăți prefixate</h3>
+    <p>Cînd folosiți proprietăți prefixate de numele producătorului, deplasați fiecare proprietate astfel încît liniile din valoarea declarării se pot alinia vetical pentru o editare multi-linie mai ușoară.</p>
+    <p>În Textmate, folosiți <strong>Text &rarr; Edit Each Line in Selection</strong> (&#8963;&#8984;A). În Sublime Text 2, folosiți <strong>Selection &rarr; Add Previous Line</strong> (&#8963;&#8679;&uarr;) and <strong>Selection &rarr;  Add Next Line</strong> (&#8963;&#8679;&darr;).</p>
   </div>
   <div class="col">
     {% highlight css %}{% include css/prefixed-properties.css %}{% endhighlight %}
@@ -292,9 +292,9 @@ layout: default
 
 <div class="section" id="css-single-declarations">
   <div class="col">
-    <h3>Single declarations</h3>
-    <p>In instances where a rule set includes <strong>only one declaration</strong>, consider removing line breaks for readability and faster editing. Any rule set with multiple declarations should be split to separate lines.</p>
-    <p>The key factor here is error detection—e.g., a CSS validator stating you have a syntax error on Line 183. With a single declaration, there's no missing it. With multiple declarations, separate lines is a must for your sanity.</p>
+    <h3>Declarații singulare</h3>
+    <p>În cazul cînd un set de reguli include <strong>doar o singură declarare</strong>, considerație ștergerea sfîrșiturilor de linie pentru citire și editare mai ușoară. Oricare set de reguli cu declarații multiple trebuie separat în mai multe linii.</p>
+    <p>Factorul-cheie este detecția erorilor, de ex. un validator CSS constată că aveți o eroare de sintaxă în linia Line 183. Cu o singură declarare nu o veți pierde. Cu declarări multiple, veți avea un cod mai curat.</p>
   </div>
   <div class="col">
     {% highlight css %}{% include css/single-declarations.css %}{% endhighlight %}
@@ -303,8 +303,8 @@ layout: default
 
 <div class="section" id="css-shorthand">
   <div class="col">
-    <h3>Shorthand notation</h3>
-    <p>Strive to limit use of shorthand declarations to instances where you must explicitly set all the available values. Common overused shorthand properties include:</p>
+    <h3>Notații prescurtate</h3>
+    <p>Limitați folosirea declarărilor prescurate în cazurile cînd trebuie să setați explicit toate valorile. Multe tipuri de notații prescurtate include:</p>
     <ul>
       <li><code>padding</code></li>
       <li><code>margin</code></li>
@@ -313,8 +313,8 @@ layout: default
       <li><code>border</code></li>
       <li><code>border-radius</code></li>
     </ul>
-    <p>Often times we don't need to set all the values a shorthand property represents. For example, HTML headings only set top and bottom margin, so when necessary, only override those two values. Excessive use of shorthand properties often leads to sloppier code with unnecessary overrides and unintended side effects.</p>
-    <p>The Mozilla Developer Network has a great article on <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties">shorthand properties</a> for those unfamiliar with notation and behavior.</p>
+    <p>Deseori nu avem nevoia de a seta toate valorile pe care le reprezintă o declarare prescurtată. De exemplu, heading-urile HTML setează doar deplasarea de sus și jos, deci cînd e necesar, suprascrieți doar acele valori. Folosirea excesivă a notațiilor prescurtate aduce la erori neașteptate.</p>
+    <p>Mozilla Developer Network are un articol despre <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties">notațiile prescurtate</a> pentru cei care nu cunosc notația sau comportamentul acestora.</p>
   </div>
   <div class="col">
     {% highlight css %}{% include css/shorthand.css %}{% endhighlight %}
@@ -323,9 +323,9 @@ layout: default
 
 <div class="section" id="css-nesting">
   <div class="col">
-    <h3>Nesting in Less and Sass</h3>
-    <p>Avoid unnecessary nesting. Just because you can nest, doesn't mean you always should. Consider nesting only if you must scope styles to a parent and if there are multiple elements to be nested.</p>
-    <p>Additional reading:</p>
+    <h3>Gruparea în Less și Sass</h3>
+    <p>Evitați gruparea fără de folos. Doar din cauză că puteți grupa, nu e necesar s-o faceți mereu. Considerați gruparea doar dacă doriți izolarea stilurilor față de un anumit părinte sau dacă există mai multe elemente care trebuiesc grupate.</p>
+    <p>Lectură adițională:</p>
     <ul>
       <li><a href="http://markdotto.com/2015/07/20/css-nesting/">Nesting in Sass and Less</a></li>
     </ul>
@@ -337,8 +337,8 @@ layout: default
 
 <div class="section" id="css-operators">
   <div class="col">
-    <h3>Operators in Less and Sass</h3>
-    <p>For improved readability, wrap all math operations in parentheses with a single space between values, variables, and operators.</p>
+    <h3>Operatorii în Less și Sass</h3>
+    <p>Pentru lizibilitate, delimitați operatorii matematici în parenteze cu un singur spațiu între valori, variabile și operatori.</p>
   </div>
   <div class="col">
     {% highlight scss %}{% include css/operators.scss %}{% endhighlight %}
@@ -348,7 +348,7 @@ layout: default
 <div class="section" id="css-comments">
   <div class="col">
     <h3>Commentarii</h3>
-    <p>Codul este scris și menținut de oameni. Codul trebuie să fie descriptiv, bine comentat și lizibil pentru alții. Comentariile bune transmit contextul sau scopul. Evitați doar reproducerea unui component sau clase.</p>
+    <p>Codul este scris și menținut de oameni. Codul trebuie să fie descriptiv, bine comentat și lizibil pentru alții. Comentariile bune transmit contextul sau scopul. Evitați doar reproducerea unui nume component sau clase.</p>
     <p>Folosiți propoziții întregi pentru comentarii mai mari și fraze succinte pentru note generale.</p>
   </div>
   <div class="col">
@@ -360,14 +360,14 @@ layout: default
   <div class="col">
     <h3>Nume de clase</h3>
     <ul>
-      <li>Keep classes lowercase and use dashes (not underscores or camelCase). Dashes serve as natural breaks in related class (e.g., <code>.btn</code> and <code>.btn-danger</code>).</li>
-      <li>Avoid excessive and arbitrary shorthand notation. <code>.btn</code> is useful for <em>button</em>, but <code>.s</code> doesn't mean anything.</li>
-      <li>Keep classes as short and succinct as possible.</li>
-      <li>Use meaningful names; use structural or purposeful names over presentational.</li>
-      <li>Prefix classes based on the closest parent or base class.</li>
-      <li>Use <code>.js-*</code> classes to denote behavior (as opposed to style), but keep these classes out of your CSS.</li>
+      <li>Păstrați clasele cu litere mici și folosiți cratime (nu cratima de jos sau camelCase). Cratimele sunt niște pauze naturale într-o clasă relevantă (de ex <code>.btn</code> și <code>.btn-danger</code>).</li>
+      <li>Evitați escesul de notații arbitrare sau prescurtate. <code>.btn</code> e de folos pentru <em>button</em>, dar <code>.s</code> nu înseamnă nimic.</li>
+      <li>Păstrați numele claselor căt mai scurte și succint posibile</li>
+      <li>Folosiți nume sugestive; folosiți nume care relevă structura sau scopul, nu cele prezentaționale.</li>
+      <li>Prefixați numele claselor în baza celui mai apropiat părinte sau clasei de bază.</li>
+      <li>Folosiți clasele <code>.js-*</code> pentru a specifica comportamentul (ca antonim al stilului), dar păstrați acele clase în afara codului CSS.</li>
     </ul>
-    <p>It's also useful to apply many of these same rules when creating Sass and Less variable names.</p>
+    <p>Este binevenit să aplicați mai multe din aceste reguli la crearea variabilelor Sass și Less.</p>
   </div>
   <div class="col">
     {% highlight css %}{% include css/class-names.css %}{% endhighlight %}
@@ -376,14 +376,14 @@ layout: default
 
 <div class="section" id="css-selectors">
   <div class="col">
-    <h3>Selectors</h3>
+    <h3>Selectorii</h3>
     <ul>
-      <li>Use classes over generic element tag for optimum rendering performance.</li>
-      <li>Avoid using several attribute selectors (e.g., <code>[class^="..."]</code>) on commonly occuring components. Browser performance is known to be impacted by these.</li>
-      <li>Keep selectors short and strive to limit the number of elements in each selector to three.</li>
-      <li>Scope classes to the closest parent <strong>only</strong> when necessary (e.g., when not using prefixed classes).</li>
+      <li>Folosiți clasele în loc de numele generic al elementului pentru o performanță mai mare a afișării.</li>
+      <li>Evitați folosirea unor selectori de atribute (de ex <code>[class^="..."]</code>) în cazul cînd mai multe elemente le pot conține. Performanța browser-ului este afectată de către acestea.</li>
+      <li>Folsiți selectori scurți și încercați să limitați numărul elementelor în fiecare selector la 3.</li>
+      <li>Delimitați clasele față de cel mai apropiat părinte <strong>doar</strong> cînd e necesar (de ex. cînd nu folosiți clase prefixate).</li>
     </ul>
-    <p>Additional reading:</p>
+    <p>Lectură adițională:</p>
     <ul>
       <li><a href="http://markdotto.com/2012/02/16/scope-css-classes-with-prefixes/">Scope CSS classes with prefixes</a></li>
       <li><a href="http://markdotto.com/2012/03/02/stop-the-cascade/">Stop the cascade</a></li>
@@ -411,14 +411,14 @@ layout: default
 
 <div class="section" id="css-editor-prefs">
   <div class="col">
-    <h3>Editor preferences</h3>
-    <p>Set your editor to the following settings to avoid common code inconsistencies and dirty diffs:</p>
+    <h3>Preferințele editorului</h3>
+    <p>Aplicați următoarele setări în editorului vostru pentru a evita inconsistențe comune ale codului:</p>
     <ul>
-      <li>Use soft-tabs set to two spaces.</li>
-      <li>Trim trailing white space on save.</li>
-      <li>Set encoding to UTF-8.</li>
-      <li>Add new line at end of files.</li>
+      <li>Folosiți tab-uri ușoare de 2 spații.</li>
+      <li>Eliminați spațiile inutile la salvarea fișierului.</li>
+      <li>Setați encodingul la UTF-8.</li>
+      <li>Adăugați linie nouă la sfărțitul fișierelor.</li>
     </ul>
-    <p>Consider documenting and applying these preferences to your project's <code>.editorconfig</code> file. For an example, see <a href="https://github.com/twbs/bootstrap/blob/master/.editorconfig">the one in Bootstrap</a>. Learn more <a href="http://editorconfig.org">about EditorConfig</a>.</p>
+    <p>Considerați documentarea și aplicarea acestor preferințe în fișierul <code>.editorconfig</code> corespunzător editoruului vostru. Pentru exemplu, vedeți <a href="https://github.com/twbs/bootstrap/blob/master/.editorconfig">pe cel din Bootstrap</a>. Vedeți mai mult despre <a href="http://editorconfig.org">EditorConfig</a>.</p>
   </div>
 </div>
